@@ -1,0 +1,16 @@
+.container{
+    width: 100%;
+    padding: 1rem;
+    .row{
+        display: flex;
+        margin-bottom: 1rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .col{
+        flex: 1;
+        background-color: #ddd;
+        border-radius: 6px;
+    }
+}

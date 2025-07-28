@@ -1,0 +1,89 @@
+.container{
+    width: 100%;
+    padding: 0 1rem;
+    .daycard{
+        width: 100%;
+        background-color: #fff;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        padding-bottom: 0;
+        border-radius: 1rem;
+        &_header{
+            width: 100%;
+            height: 3.5rem;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1rem;
+            .daytime{
+                font-size: 0.8rem;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: space-between
+                
+            }
+            .dayInfo{
+                width: 100%;
+                height: 1rem;
+                display: flex;
+                justify-content: space-between;
+                &_outIn{
+                    display: flex;
+                    font-size: 0.8rem;
+                    gap: 3rem;
+                    margin-top: 0.5rem;
+                    span{
+                        width: 6rem;
+                        display: inline-block;
+                    }
+                }
+                &_surplus{
+                    margin-top: 0.5rem;
+                    font-size: 0.7rem;
+                    color: #666;
+                }
+                &_surplus span:nth-child(1){
+                    font-size: 1.2rem;
+                    margin-right: 0.5rem;
+                    font-weight: bold;
+                }
+            }
+        }
+        
+        .dayInfo_feeItem{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_left{
+                font-size: 0.8rem;
+                color: #333;
+                display: flex;
+                align-items: center;
+                .dayInfo_feeItem_title{
+                    margin-left: 0.5rem;
+                }
+            }
+            &_right{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+.dayInfo_feeItem_icon{
+    font-size: 1.5rem;
+    color: rgba(226, 165, 11, 1);
+}
+.daytime_icon{
+    transition: all 0.3s;
+    color: #555;
+}
+.daytime_icon_rotate{
+    transform: rotate(180deg);
+}
+.dayInfo_feeList{
+    transition: all 0.3s;
+    overflow: hidden;
+}

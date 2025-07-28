@@ -1,0 +1,11 @@
+.scrollNumber {
+  display: inline-block;
+  font-weight: bold;
+  color: inherit;
+  transition: transform 0.3s ease;
+  
+  &.animate {
+    transform: translateY(-10px);
+    opacity: 0.8;
+  }
+}
